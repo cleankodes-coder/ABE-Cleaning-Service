@@ -1,0 +1,6 @@
+{
+  "name": "ABE Cleaning Services — Smart Operations Hub",
+  "description": "Interactive operations workspace concept for ABE Cleaning Services covering enquiries, commercial pipeline, quotations, site visits, job scheduling, and follow-up management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
