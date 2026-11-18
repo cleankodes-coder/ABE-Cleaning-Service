@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --abe-navy: #0F1B3D;
+    --abe-navy-hover: #1A2B5C;
+    --abe-gold: #8A6A2C;
+    --abe-gold-soft: #F7F2E7;
+    --abe-gold-border: #DECFA8;
+    --abe-bg: #F7F8FA;
+    --abe-surface: #FFFFFF;
+    --abe-text: #0F1B3D;
+    --abe-body: #2C3752;
+    --abe-muted: #647087;
+    --abe-border: #E8EAF0;
+  }
+
+  html {
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--abe-text);
+    background-color: var(--abe-bg);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  .font-mono-tabular {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle custom scrollbars for horizontal Kanban / tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CFD5E2;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A7B1C4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
